@@ -7,20 +7,21 @@
     font-family:'Roboto Condensed', sans-serif; 
 }
 
+
 header{
-    display: relative;
-    z-index: 1;
+
     height: 90px;
     display:block;
     width: 100%;
 }
 
 header .logo{
-    position: absolute;
+    position: relative;
+    z-index: 1;
     margin: 0 0 0 33.375px;
     color: red;
     font-size: 3rem;
-    width: 166px;
+    width: 100%;
     height: 67px;
 }
 
@@ -28,10 +29,11 @@ header .logo{
 
 .form-wrapper{
     position: absolute;
-    height: 660px;
-    width: 450px;
+    height: 500px;
+    width: 360px;
     left: 50%;
     top: 50%;
+    margin-top: 45px;
     background: rgba(0,0,0,0.75);
     transform: translate(-50%, -50%);
     padding: 55px;
@@ -66,6 +68,8 @@ header .logo{
 
 body{
     background: black;
+    height: 1590px;
+    height: fit-content;
 }
 
 body::before{
@@ -158,6 +162,16 @@ form .form-help :where(label, a){
     text-decoration: underline;   
 }
 
+.footer{
+    position: fixed;
+    z-index: 1;
+    background-color: black;
+    width: 100%;
+    height: 200px;
+    bottom: 0;
+    color: white;
+}
+
 @media (max-width: 740px){
     body::before {
         display: none;
@@ -180,5 +194,7 @@ form .form-help :where(label, a){
     }
     
 }
+
+
 
  
